@@ -1,0 +1,274 @@
+html{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+#logo{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0
+}
+
+/* Bouton play */
+#play{
+    width: 150px;
+    height: 40px;
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid black;
+    position: absolute;
+    left: 120px;
+    top: 25%;
+    box-shadow: 0 0 0 0 #000;
+    animation: pulse 1.3s infinite;
+
+}
+
+@keyframes pulse {
+    to {
+        box-shadow: 0 0 0 18px rgba(0, 0, 0, 0.01); 
+    }
+}
+
+/* Bouton reset */
+#reset{
+    position: absolute;
+    left: 120px;
+    top: 35%;
+    width: 150px;
+    height: 40px;
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+/* Titre principal */
+h1{
+    top: 0px;
+    padding-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#jp{
+    width: 450px;
+    height: 150px;
+    border: none;
+}
+
+/* Bloc principal */
+.bloc{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    margin: 0;
+    flex-direction: column;
+    height: 600px;
+    margin-top: 50px;
+    
+}
+
+/* Bloc qui regroupe les cinq images */
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* image */
+img{ 
+    list-style-type: none;
+    border: 2px solid orange;
+    margin-top: 15px;
+    height: 250px;
+    width: 250px;
+    
+}
+
+
+
+/* Zone de saisie */
+.saisi{
+    margin-top:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* txt 'prix de l'objet' */
+label{
+    margin-bottom: 30px;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Donnée saisie  */
+#valeur{
+    width: 80%;
+    border: solid 2px black;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    background-color: whitesmoke;  
+}
+
+/* Bouton valider */
+#btnOk{
+
+    width: 150px;
+    height: 40px;
+    background-color: orange;
+    color: rgb(3, 2, 2);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid black; 
+    margin-bottom: 10px;  
+}
+
+/* Bouton valider -> hover */
+#btnOk:hover{
+    display: flex;
+    width: 150px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid black;
+    scale: 1.02;
+    transition: 0.3s;
+}
+
+/* Zone de retour 'reponse' */
+#retour{
+    display: flex;
+    width: 410px;
+    border: solid black 2px;
+    height: 60px;
+    background-color: orange;
+    margin-top: 0px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 0px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;  
+}
+
+/* Zone de retour 'nombre d'essaie */
+#retourTry{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    
+    right:100px ;
+    top: 600px;   
+    height: 40px;
+    font-size: 18px;
+    background-color: whitesmoke;
+}
+
+.message-element {
+    background-color: rgb(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .message {
+    background-color: #21364e;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.5);
+    width: 700px;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    height: 600px;
+  }
+  
+  .message button {
+    cursor: pointer;
+    background-color: #fff;
+    column-rule: #354961;
+    border: 0;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  .message button:active {
+    transform: scale(0.98);
+  }
+  
+  .message button:hover {
+    background-color: rgb(211, 211, 211);
+  }
+
+  img.img-msg{
+    border: none;
+    width: 600px;
+    height: 500px;
+  }
+
+  p.notice{
+    position: absolute;
+    background-color: orangered;
+    left: 120px;
+    width: 420px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    line-height: 45px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    top: 58%;
+  }

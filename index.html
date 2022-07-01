@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="shortcut icon" href="#" />
+    <title>juste-prix</title>
+</head>
+
+<body>
+
+    <span id="logo"><img src="./assets/image/justeprix.png" id="jp" alt="logo" /></span>
+    </h1>
+
+
+    <!--Section affichage des images-->
+    <div class="bloc">
+        <!--Bouton lancer le jeu-->
+        <button type="submit" id="play">PLAY</button>
+        <!--Bouton reset-->
+        <button type="submit" id="reset">RESET</button>
+
+      
+        
+            <!--Zone de retour pour le résultat-->
+            <h2 id="retour"></h2>
+            <div id="container"></div>
+            <!--Section pour saisie des données-->
+            <div class="saisi">
+                <div class="notice">
+                    <p class="notice">
+                        Appuyer sur PLAY pour commencer une partie <br/>
+                        Saisir ensuite un nombre puis valider<br/>
+                        Attention, vous n'avez que 10 essais !
+                    </p>
+                </div>
+                <label for="valeur">Saisir le prix de l'objet (entre 1 & 100)</label>
+                <!--Recupération en js avec l'id 'valeur'-->
+                <input type="text" class="form-control" id="valeur" placeholder="Saisir" />
+                <!--Valider l'envoi de la valeur-->
+                <button type="submit" id="btnOk">VALIDER</button>
+
+                <!--Zone de retour 'Nombre d'essaie restant'-->
+                <span id="retourTry"> Nombre d'essai : 10</span>
+            </div>
+
+    </div>
+
+    <div class="message-element" id="message-element">
+        <div class="message">
+          <h2 id="message-fin"><img src="./assets/image/notice-Jp.PNG" alt="" class="img-msg" ></h2>
+          <button id="play-bouton">Entrer</button>
+        </div>
+    </div>
+
+
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
